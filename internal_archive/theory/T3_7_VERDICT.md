@@ -1,0 +1,25 @@
+# T3.7 verdict — strong supplied-optimum hardness, insufficient headline novelty
+
+**Decision: OUTCOME C, with an important qualification.** The strongest target theorem is mathematically true: EXACTNESS-BUDGET remains NP-complete even with a fixed ranking, a supplied globally optimal value, and a supplied globally optimal solution. The construction is stronger than the bare statement that the *full* MIP is hard. Nevertheless, it merely embeds SAT feasibility/optimization in the restricted-prefix MIP, and the alternative-optimum variable-fixing paradigm has close prior art. It does not establish a genuinely new complexity mechanism for minimum candidate dimension. Stop theorem hunting after this phase under the stated novelty gate.
+
+## Required answers
+
+**Q1. Is computing $B^\dagger$ hard even when $J^*$ is supplied?** Yes. Theorem R1 gives NP-completeness of deciding $B^\dagger\le k$ on a bounded-coefficient 0–1 MILP class with supplied $J^*=0$. The objective is nonnegative and an explicit zero-cost solution is present, so correctness of the supplied value is evident. Computing the exact budget is therefore NP-hard.
+
+**Q2. Is it hard even when one global optimum is supplied?** Yes. R1 supplies $v^*$ using a late switch $z=1$; a different zero-cost optimum enters at budget $k=N-1$ if and only if the 3SAT formula is satisfiable. A marker variable ensures no earlier zero-cost entry. All candidate prefixes are feasible. The theorem is strong NP-completeness in the bounded-coefficient sense, and the same proof applies to the fixed positive tolerance $\tau=1$.
+
+**Q3. Is the result different from sparsest-optimal-solution complexity?** The objective is different: earliest rank of a support can disagree with minimum support cardinality (example in the complexity note). But R1's hard core is the standard existential variable-fixing question on an optimal solution set, closely related to backbone/alternative-optimum computation. The fixed ranking does not prevent a reviewer from dismissing the proof as known support-selection or restricted-feasibility hardness. No claim of firstness or independent theoretical depth is justified.
+
+**Q4. Does hardness extend to $Q(\tau)$ for $\tau>0$?** Yes for a fixed constant, specifically $\tau=1$, by R1. The prefix objective is either 0 or 2, while the full optimum is 0. For nonmetric, uniform-capacity CFLP, R2 proves NP-completeness with an input-dependent positive threshold $\tau=K$ and supplied optimum. R2 does not prove fixed-positive-tolerance or exactness-budget hardness for CFLP.
+
+**Q5. Is any meaningful approximation barrier obtained?** No. R1's natural budget gap is one index. Padding inert entities can inflate any multiplicative index gap without changing the optimization problem, so a ratio lower bound based on that operation would be formally possible but scientifically vacuous. Set Cover's logarithmic **cost** approximation hardness does not automatically transfer to candidate **dimension** approximation.
+
+**Q6. Is there a nontrivial tractable class?** Yes. Rational LP prefix families, ranked-arc minimum-cost flow, and weighted matroid bases admit polynomial exact $Q$ and full-spectrum computation (T1–T3). Minimum-cost flow retains coupled conservation and capacities, unlike a fully separable toy model. A fixed total number of binary variables also gives an FPT enumeration-plus-LP bound. These are standard structural tractability results.
+
+**Q7. Is this an independent second headline theorem?** No for the target top-tier optimization/OR paper. R1 is a correct, sharp supplied-optimum hardness statement, but its only hard work is a 3SAT encoding in one candidate subproblem. The ordered search over candidate budgets is classical logarithmic search with exact-value access, and the full spectrum needs only linear output-sensitive scanning once values are known. No nontrivial approximation, natural parameterized dichotomy, or class-specific new hardness mechanism survives the hostile test.
+
+**Q8. Should theorem hunting stop after this phase?** Yes, under this sequence's decision gate. A defensible publication strategy is one carefully positioned sharp identification theorem plus the quality-spectrum framework, solver-bound certification, and already audited computational evidence. That strategy would require a revised venue/claim target and a separately authorized manuscript phase; T3.7 itself does not authorize T4/T5.
+
+## Scope and integrity checks
+
+The reductions specify polynomial size, constant versus input-dependent tolerance, known optimum and supplied solution, fixed ranking, NP membership on restricted binary/CFLP classes, and bounded-coefficient versus input-encoded-cost hardness. No empirical experiment or master-manuscript edit was performed. No metric-CFLP, portfolio-MIQP, W-hardness in $k$, or approximation-threshold claim was made. The exact claim is about the decision problem under the stated encoding, not a runtime prediction for the paper's benchmark instances.

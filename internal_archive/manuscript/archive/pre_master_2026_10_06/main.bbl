@@ -1,0 +1,151 @@
+\begin{thebibliography}{20}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Benidis et~al.(2018)Benidis, Feng, and Palomar]{benidis2018sparse}
+Konstantinos Benidis, Yiyong Feng, and Daniel~P. Palomar.
+\newblock Sparse portfolios for high-dimensional financial index tracking.
+\newblock \emph{IEEE Transactions on Signal Processing}, 66\penalty0
+  (1):\penalty0 155--170, 2018.
+\newblock \doi{10.1109/TSP.2017.2762286}.
+
+\bibitem[Bertsimas and Cory-Wright(2022)]{bertsimas2022scalable}
+Dimitris Bertsimas and Ryan Cory-Wright.
+\newblock A scalable algorithm for sparse portfolio selection.
+\newblock \emph{INFORMS Journal on Computing}, 34\penalty0 (3):\penalty0
+  1489--1511, 2022.
+\newblock \doi{10.1287/ijoc.2021.1127}.
+
+\bibitem[Bertsimas and Kim(2023)]{bertsimas2023prescriptive}
+Dimitris Bertsimas and Cheol~Woo Kim.
+\newblock A prescriptive machine learning approach to mixed-integer convex
+  optimization.
+\newblock \emph{INFORMS Journal on Computing}, 35\penalty0 (6):\penalty0
+  1225--1241, 2023.
+\newblock \doi{10.1287/ijoc.2022.0188}.
+
+\bibitem[Bertsimas and Stellato(2021)]{bertsimas2021voice}
+Dimitris Bertsimas and Bartolomeo Stellato.
+\newblock The voice of optimization.
+\newblock \emph{Machine Learning}, 110\penalty0 (2):\penalty0 249--277, 2021.
+\newblock \doi{10.1007/s10994-020-05893-5}.
+
+\bibitem[Bertsimas and Stellato(2022)]{bertsimas2022online}
+Dimitris Bertsimas and Bartolomeo Stellato.
+\newblock Online mixed-integer optimization in milliseconds.
+\newblock \emph{INFORMS Journal on Computing}, 34\penalty0 (4):\penalty0
+  2229--2248, 2022.
+\newblock \doi{10.1287/ijoc.2022.1181}.
+
+\bibitem[Chmiela et~al.(2021)Chmiela, Khalil, Gleixner, Lodi, and
+  Pokutta]{chmiela2021learning}
+Antonia Chmiela, Elias Khalil, Ambros Gleixner, Andrea Lodi, and Sebastian
+  Pokutta.
+\newblock Learning to schedule heuristics in branch and bound.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS
+  2021)}, volume~34, pages 24235--24246, 2021.
+
+\bibitem[El~Ghaoui et~al.(2012)El~Ghaoui, Viallon, and Rabbani]{ghaoui2012safe}
+Laurent El~Ghaoui, Vivian Viallon, and Tarek Rabbani.
+\newblock Safe feature elimination in sparse supervised learning.
+\newblock \emph{Pacific Journal of Optimization}, 8\penalty0 (4):\penalty0
+  667--698, 2012.
+
+\bibitem[Elmachtoub and Grigas(2022)]{elmachtoub2022smart}
+Adam~N. Elmachtoub and Paul Grigas.
+\newblock Smart ``predict, then optimize''.
+\newblock \emph{Management Science}, 68\penalty0 (1):\penalty0 9--26, 2022.
+\newblock \doi{10.1287/mnsc.2020.3922}.
+
+\bibitem[Gasse et~al.(2019)Gasse, Ch{\'e}telat, Ferroni, Charlin, and
+  Lodi]{gasse2019exact}
+Maxime Gasse, Didier Ch{\'e}telat, Nicola Ferroni, Laurent Charlin, and Andrea
+  Lodi.
+\newblock Exact combinatorial optimization with graph convolutional neural
+  networks.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS
+  2019)}, volume~32, pages 15580--15592, 2019.
+
+\bibitem[He et~al.(2014)He, Daum{\'e}~III, and Eisner]{he2014learning}
+He~He, Hal Daum{\'e}~III, and Jason~M. Eisner.
+\newblock Learning to search in branch and bound algorithms.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS
+  2014)}, volume~27, pages 3293--3301, 2014.
+
+\bibitem[Khalil et~al.(2016)Khalil, Le~Bodic, Song, Nemhauser, and
+  Dilkina]{khalil2016learning}
+Elias~B. Khalil, Pierre Le~Bodic, Le~Song, George Nemhauser, and Bistra
+  Dilkina.
+\newblock Learning to branch in mixed integer programming.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~30, pages 724--731, 2016.
+\newblock \doi{10.1609/aaai.v30i1.10080}.
+
+\bibitem[Laufer-Goldshtein et~al.(2024)Laufer-Goldshtein, Vardi, and
+  Srebro]{laufer2024conformal}
+Bat-El Laufer-Goldshtein, Gal Vardi, and Nathan Srebro.
+\newblock Conformal risk control for structured and combinatorial prediction.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  37:\penalty0 11234--11258, 2024.
+
+\bibitem[Lykouris and Vassilvitskii(2021)]{lykouris2021competitive}
+Thodoris Lykouris and Sergei Vassilvitskii.
+\newblock Competitive caching with machine learned advice.
+\newblock \emph{Journal of the ACM}, 68\penalty0 (4):\penalty0 1--25, 2021.
+\newblock \doi{10.1145/3457584}.
+
+\bibitem[Mandi et~al.(2020)Mandi, Demirovi{\'c}, Stuckey, and
+  Guns]{mandi2020smart}
+Jayanta Mandi, Emir Demirovi{\'c}, Peter~J. Stuckey, and Tias Guns.
+\newblock Smart predict-and-optimize for hard combinatorial optimization
+  problems.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~34, pages 1603--1610, 2020.
+\newblock \doi{10.1609/aaai.v34i02.5521}.
+
+\bibitem[Maragno et~al.(2023)Maragno, Wiberg, Bertsimas, and
+  Birge]{maragno2023conformal}
+Donato Maragno, Holly Wiberg, Dimitris Bertsimas, and John~R. Birge.
+\newblock Mixed-integer optimization with conformal prediction sets.
+\newblock \emph{INFORMS Journal on Computing}, 35\penalty0 (4):\penalty0
+  789--807, 2023.
+
+\bibitem[Mitzenmacher and Vassilvitskii(2022)]{mitzenmacher2022algorithms}
+Michael Mitzenmacher and Sergei Vassilvitskii.
+\newblock Algorithms with predictions.
+\newblock \emph{Communications of the ACM}, 65\penalty0 (7):\penalty0 64--73,
+  2022.
+\newblock \doi{10.1145/3528087}.
+
+\bibitem[Nair et~al.(2020)Nair, Bartunov, Gimeno, von Glehn, Lichman, Schmitt,
+  Jones, Amoros, Kahng, Choi, et~al.]{nair2020solving}
+Vinod Nair, Sergey Bartunov, Felix Gimeno, Djordje von Glehn, Pawel Lichman,
+  Sebastian Schmitt, Nicola Jones, Daniel Amoros, Steven Kahng, Sungsoo Choi,
+  et~al.
+\newblock Solving mixed integer programs using neural networks.
+\newblock \emph{arXiv preprint arXiv:2012.13349}, 2020.
+
+\bibitem[Tang et~al.(2020)Tang, Agrawal, and Faenza]{tang2020reinforcement}
+Yunhao Tang, Shipra Agrawal, and Yuri Faenza.
+\newblock Reinforcement learning for integer programming: Learning to cut.
+\newblock In \emph{Proceedings of the 37th International Conference on Machine
+  Learning (ICML 2020)}, volume 119 of \emph{Proceedings of Machine Learning
+  Research}, pages 9367--9376, 2020.
+
+\bibitem[Triantafyllou and Papathanasiou(2024)]{triantafyllou2024deep}
+Niki Triantafyllou and Maria~M. Papathanasiou.
+\newblock Deep learning enhanced mixed integer optimization: Learning to reduce
+  model dimensionality.
+\newblock \emph{Computers \& Chemical Engineering}, 187:\penalty0 108725, 2024.
+\newblock \doi{10.1016/j.compchemeng.2024.108725}.
+
+\bibitem[Wada et~al.(2026)Wada, Ikeda, Takano, and Gotoh]{wada2026safe}
+Nanari Wada, Shunnosuke Ikeda, Yuichi Takano, and Jun-ya Gotoh.
+\newblock Safe screening rules for portfolio optimization with linear and
+  cardinality constraints.
+\newblock \emph{arXiv preprint arXiv:2608.01871}, 2026.
+
+\end{thebibliography}

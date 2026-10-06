@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/learning_augmented_portfolio/__init__.py
+src/learning_augmented_portfolio.egg-info/PKG-INFO
+src/learning_augmented_portfolio.egg-info/SOURCES.txt
+src/learning_augmented_portfolio.egg-info/dependency_links.txt
+src/learning_augmented_portfolio.egg-info/requires.txt
+src/learning_augmented_portfolio.egg-info/top_level.txt
+src/learning_augmented_portfolio/optimization/__init__.py
+src/learning_augmented_portfolio/optimization/single_period_qp.py
+src/learning_augmented_portfolio/optimization/variables.py
+src/learning_augmented_portfolio/solver/__init__.py
+src/learning_augmented_portfolio/solver/gurobi_solver.py
+tests/test_qp.py

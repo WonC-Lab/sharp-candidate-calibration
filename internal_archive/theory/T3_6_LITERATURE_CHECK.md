@@ -1,0 +1,30 @@
+# T3.6 — Targeted primary-source literature and novelty check
+
+This is a bounded audit, not an exhaustive priority claim. Sources were checked for the mathematical mechanism, the operational meaning of MIP bounds, classical search baselines, and the one permitted fallback direction. No experiment or manuscript change was made.
+
+## Solver records and existing search theory
+
+* The [Gurobi MIP logging reference](https://docs.gurobi.com/projects/optimizer/en/current/concepts/logging/mip.html) describes incumbent objective and global best bound during branch-and-cut. Its [MATLAB attribute reference](https://docs.gurobi.com/projects/optimizer/en/current/reference/matlab/solving.html) explicitly distinguishes objective bound from incumbent and notes integrality-aware bound rounding. Its [parameter guidance](https://docs.gurobi.com/projects/optimizer/en/current/concepts/parameters/guidelines.html) documents time/absolute-gap/bound stopping. These support using valid $L_B,U_B$ from partial runs; they do not establish a new theorem for nested $Q(\tau)$. Relative MIP gap or a solver's status string must not silently be substituted for the absolute, outward-valid inequalities in D1–D3.
+* [Bentley and Yao, *An Almost Optimal Algorithm for Unbounded Searching* (1976)](https://www.sciencedirect.com/science/article/abs/pii/0020019076900715) predates any doubling/exponential search proposed here. [Megiddo, *Applying Parallel Computation Algorithms in the Design of Serial Algorithms* (1983)](https://theory.stanford.edu/~megiddo/pdf/applying.pdf) is the classical parametric-search baseline. [Chrobak, Kenyon, Noga, and Young, *Incremental Medians via Online Bidding*](https://arxiv.org/abs/cs/0504103) develops online bidding as a separate threshold-purchase model. Binary search of an exact monotone predicate and its decision-tree bound are classical. Therefore logarithmic exact-query localization, doubling, or a midpoint scheduler cannot be claimed as T3.6 novelty. A three-way `FAIL/UNRESOLVED/PASS` interface alone supplies no improved worst-case refinement bound because `UNRESOLVED` may persist arbitrarily long.
+
+## Partial identification and nearby MIO work
+
+* [Yang and Zentefis, *Monotone Function Intervals: Theory and Applications*](https://arxiv.org/abs/2302.03135) studies sets of monotone functions between envelopes. [Manski and Tamer, *Inference on Regressions with Interval Data*](https://onlinelibrary.wiley.com/doi/10.1111/1468-0262.00294) is a foundational interval/shape-restriction partial-identification source. These do not by themselves state D4–D5 for nested MIO budgets, but they underscore that interval intersection plus monotonicity is an established mathematical engine.
+* The prior T3.5 [Theorem C](T3_5_PARTIAL_IDENTIFICATION.md) already gives the exact threshold identified set, noncontiguous example, splice converse, and MIO observational lower bound when each lower record has the special form $u_B-z$. General heterogeneous $L_B$ and separate full bounds improve operational scope, not proof independence.
+* The project already screened [Clarke and Stellato 2025](https://arxiv.org/html/2512.03547v1), [Clarke and Stellato 2026](https://arxiv.org/html/2602.01476v2), and [Wada et al. 2026](https://arxiv.org/abs/2608.01871). The first two address learned/hierarchical MIO quality and solver-state early stopping; the third is cardinality-portfolio safe screening. They motivate careful comparison, not a priority claim for D1–D3. No portfolio-specific theorem was retained: support-conditioned convex duals or perspective relaxations can feed tighter valid $L_B$, but a theorem about *minimum quality budget* would require a class-specific coupling beyond the scalar records, and ordinary variable fixing would overlap safe screening.
+
+## One alternative investigated: perturbation stability (direction A)
+
+Targeted primary-source search found [Gugat and Hante, *Lipschitz Continuity of the Value Function in Mixed-Integer Optimal Control Problems*](https://arxiv.org/abs/1612.04639), which studies value-function stability under perturbations of costs and other data. A broader [2026 value-function stability paper](https://arxiv.org/abs/2608.25789) also frames continuity under objective/feasible-map perturbations. Neither source is asserted to state the exact finite (Q)-inequality below; they show the *value stability* ingredient has substantial prior art.
+
+Consider two instances with the **same feasible sets at each budget** and objectives (f,f') satisfying $|f'(x)-f(x)|\le\varepsilon$ for every feasible (x). Then $|J'_B-J_B|\le\varepsilon$ and $|s'-s|\le\varepsilon$, by taking minima on identical sets; hence $|g'_B-g_B|\le2\varepsilon$. Consequently
+\[
+Q_g(\tau+2\varepsilon)\ \le\ Q_{g'}(\tau)\ \le\ Q_g(\tau-2\varepsilon), \tag{L1}
+\]
+where the right-hand side is interpreted as (N) when $\tau-2\varepsilon<0$. The first inequality follows because any $g'_B\le\tau$ entails $g_B\le\tau+2\varepsilon$; the second because any $g_B\le\tau-2\varepsilon$ entails $g'_B\le\tau$. If the feasible sets change, the uniform objective-difference assumption alone does not imply these value bounds.
+
+Equation (L1) is a direct value-bound/first-passage sandwich, closely analogous to T3's tolerance-shift identities. It has no new sharp MIO mechanism, optimal adaptive policy, or class-specific separation theorem. Therefore direction A is **not promoted** to a second headline. Directions B and C were not investigated in this phase, as the instruction requested one alternative if D collapsed.
+
+## Narrow conclusion
+
+The checked sources do not establish that D4–D5 have appeared verbatim for nested candidate MIOs; no such negative priority claim is made. The hostile novelty question is mathematical rather than bibliographic: a reviewer can accurately describe D1–D3 as intersecting solver intervals with monotonicity, followed by the same first-passage splice as T3.5. The practical two-sided certificate is useful, but no independent theoretical pillar was demonstrated.

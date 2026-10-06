@@ -1,0 +1,13 @@
+*.tex
+*.json
+*.csv
+*.npz
+*.npy
+*.pkl
+*.log
+
+results/
+outputs/
+artifacts/
+__pycache__/
+*.pyc
